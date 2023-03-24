@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SeoulFestival" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#6D9674</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#0C3A2D</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="tab" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/tabback</item>
+        <item name="tabSelectedTextColor">@color/tabtext</item>
+        <item name="android:textStyle">bold</item>
+        <item name="tabIconTint">@color/tab_icon</item>
+    </style>
+
+</resources>

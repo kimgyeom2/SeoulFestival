@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="#A3C6A9"
+    android:layout_margin="8dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/titleImg"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dear Next Generation, 유다빈밴드(YUDABINBAND)"
+            android:layout_toRightOf="@id/titleImg"
+            android:textSize="20sp"
+            android:fontFamily="@font/fontt"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/codeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="분류"
+            android:textColor="@color/black"
+            android:layout_below="@id/title"
+            android:layout_alignLeft="@id/title"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강동아트센터 대극장 한강"
+            android:textColor="@color/black"
+            android:layout_below="@id/codeName"
+            android:layout_alignLeft="@id/codeName"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023-09-28~2023-09-28"
+            android:textColor="@color/black"
+            android:layout_below="@id/place"
+            android:layout_alignLeft="@id/place"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

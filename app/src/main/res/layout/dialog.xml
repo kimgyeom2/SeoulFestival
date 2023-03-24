@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#A3C6A9">
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="130dp"
+        android:layout_toRightOf="@id/dia_iv"
+        android:layout_below="@id/dia_title"
+        android:layout_marginTop="4dp"
+        android:background="#E4F1E5"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+    <TextView
+        android:id="@+id/dia_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample text~~~~~~~~~~~~~~~~~~~~~"
+        android:textSize="18sp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/dia_iv"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/dia_title"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/prince4"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/dia_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dia_title"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dia_iv"
+        android:text="분류 :"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dia_palce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dia_genre"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dia_iv"
+        android:text="장소 :"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dia_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dia_palce"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/dia_iv"
+        android:textStyle="bold"
+        android:text="행사기간"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dia_genreT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dia_title"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dia_genre"
+        android:text="분류"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dia_palceT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dia_genre"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/dia_palce"
+        android:text="장소"
+        android:textStyle="bold"
+        android:textColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/dia_dateT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dia_date"
+        android:layout_alignLeft="@id/dia_date"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:text="공연기간"
+        android:textColor="@color/black" />
+
+
+
+</RelativeLayout>
