@@ -27,7 +27,6 @@ public class AlarmReciever extends BroadcastReceiver {
             //알림 채널 객체 생성
             NotificationChannel channel= new NotificationChannel("ch01","Ex58 channel", NotificationManager.IMPORTANCE_HIGH);
 
-            //매니저에게 채널을 등록하기 전에..사운드 작업해야 함.
             notificationManager.createNotificationChannel(channel);
             builder= new NotificationCompat.Builder(context, "ch01");
         }else{
