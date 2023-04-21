@@ -105,25 +105,24 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.VH> {
             TimePickerDialog.OnTimeSetListener timeSetListener= new TimePickerDialog.OnTimeSetListener() {
                 @Override
                 public void onTimeSet(TimePicker timePicker, int i, int i1) {
-                    //파라미터 i , i1 : hour, min
                     hour= i;
                     minute= i1;
 
-                    // 정해진 날짜로 Calendar 객체 생성
                     Calendar calendar= Calendar.getInstance();
                     calendar.set(year, month, day, hour, minute, 0);
 
-                    // 정한 시간으로 알람 설정
                     AlarmManager alarmManager= (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 
-                    int n=getLayoutPosition();
-                    FestivalItem item=festivalItems.get(n);
-                    //알람설정 시간에 실행할 컴포넌트[Activity, BR, Service] 지정
-                    Intent intent= new Intent(context, AlarmReciever.class).putExtra("title",item.title).putExtra("place",item.place);
+                    int position=getLayoutPosition();
+                    FestivalItem item=festivalItems.get(position);
 
+                    Intent intent= new Intent(context, AlarmReciever.class);
+                    intent.putExtra("title",item.title);
+                    intent.putExtra("place",item.place);
+                    //context.sendBroadcast(intent);
                     PendingIntent pendingIntent= PendingIntent.getBroadcast(context, 200, intent, PendingIntent.FLAG_IMMUTABLE);
                     //알람 설정
-                    alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(), pendingIntent);
+                    alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),pendingIntent);
                 }
             };
             time.setOnClickListener(view -> {

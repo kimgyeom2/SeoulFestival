@@ -3,6 +3,7 @@ package com.gy25m.seoulfestival;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -30,7 +31,7 @@ public class AlarmReciever extends BroadcastReceiver {
             notificationManager.createNotificationChannel(channel);
             builder= new NotificationCompat.Builder(context, "ch01");
         }else{
-            builder= new NotificationCompat.Builder(context, ""); //채널이 없으니 아이디도 그냥 빈 문자열로.
+            builder= new NotificationCompat.Builder(context, "");
 
         }
         builder.setSmallIcon(R.drawable.sf);
