@@ -60,7 +60,13 @@
 
 
 
-
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
 
     </RelativeLayout>
 
