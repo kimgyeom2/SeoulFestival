@@ -120,7 +120,7 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.VH> {
                     intent.putExtra("title",item.title);
                     intent.putExtra("place",item.place);
                     //context.sendBroadcast(intent);
-
+                    PendingIntent pendingIntent= PendingIntent.getBroadcast(context, 200, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
                     //알람 설정
                     alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),pendingIntent);
                 }
