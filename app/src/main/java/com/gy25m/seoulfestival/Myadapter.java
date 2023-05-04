@@ -97,7 +97,8 @@ public class Myadapter extends RecyclerView.Adapter<Myadapter.VH> {
                 dialog.show();
 
                 diaPlace.setOnClickListener(view1 -> {
-                    Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("https://map.kakao.com/link/search/"+item.place));
+                    Intent intent=new Intent(context, PlaceUrlActivity.class);
+                    intent.putExtra("url",item.place);
                     context.startActivity(intent);
                 });
             });
